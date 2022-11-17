@@ -61,10 +61,6 @@ class Camera:
             time_stamp = self.create_timestamp()
             path = os.path.join(os.getcwd(), time_stamp + ".png")
 
-        else:
-            if not os.path.exists(path=path):
-                raise IOError
-
         try:
             cv2.imwrite(path, image)  # save image
 
@@ -76,7 +72,7 @@ class Camera:
         Display a cv2 frame.
 
         :param frame: Cv2 frame taken before.
-        :return: 
+        :return:
         """
 
         while True:
@@ -90,5 +86,4 @@ class Camera:
 
 
 if __name__ == "__main__":
-    c = Camera()
-    c.take_picture()
+    print(__file__)
