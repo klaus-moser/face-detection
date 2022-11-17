@@ -31,3 +31,7 @@ class Detection:
             coordinates.append((x, y, x + width, y + height))  # save coordinates
 
         return coordinates
+
+
+if __name__ == "__main__":
+    print(__file__)
